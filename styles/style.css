@@ -1,4 +1,5 @@
 
+
 body, main {
 	width: 100%;
 	margin: 0; /* Remove default white space, edges hit actual page edges */
@@ -13,4 +14,17 @@ body, main {
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+#header h1 {
+ line-height: 100px;
+ margin: 0;
+ padding: 0;
 }
