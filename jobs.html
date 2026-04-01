@@ -5,15 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test</title>
-	<img src="images/logo.png" alt="Goobers Logo" id="logo">
 	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="stylesheet" href="/styles/jobs.css">
 </head>
 
 <body>
 	<header>
-		<div id="header">
-			<h1>Job Opportunities</h1>
-		</div>
 		<hr>
 		<nav id="links">
 			<ul>
@@ -23,13 +20,74 @@
 				<li><a href="apply.html">Apply</a></li>
 				<li><a href="about_us.html">About Us</a></li>
 			</ul>
-
 		</nav>
+		<hr>
+		<div id="header">
+			<h1>Job Opportunities</h1>
+		</div>
 	</header>
 
 	<main>
-		<div>
+		<!--Job Filtering Elements-->
+		<div class="job-controls">
+			<input type="text" placeholder="Search jobs...">
+			<select>
+				<option value="">All Locations</option>
+				<option value="melbourne">Melbourne</option>
+				<option value="sydney">Sydney</option>
+			</select>
 		</div>
+		<!--List of Jobs and Modals-->
+		<div class="job-cards-container">
+			<div class="job-cards">
+				<div class="job-card-contents">
+					<input type="checkbox" id="job1-toggle" class="modal-toggle" />
+					<label for="job1-toggle" class="job-card">
+						<h2>Head of Media</h2>
+						<p class="location">&copy Goobers - Melbourne</p>
+						<p class="job-description">Work on spreading awareness about sustainability...</p>
+					</label>
+					<div class="job-modal">
+						<label for="job1-toggle" class="modal-bg"></label>
+						<div class="modal-content">
+							<h2>Head of Media</h2>
+							<p><strong>Company:</strong> Goobers</p>
+							<p><strong>Location:</strong> Melbourne</p>
+							<p><strong>Yearly Salary:</strong> $70 000</p>
+							<p>Insert Job Description here</p>
+							<label for="job1-toggle" class="exit">&times;</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			
+			<div class="job-cards">
+				<div class="job-card-contents">
+					<input type="checkbox" id="job2-toggle" class="modal-toggle" />
+					<label for="job2-toggle" class="job-card">
+						<h2>Elements Tester</h2>
+						<p class="location">&copy Goobers - Melbourne</p>
+						<p class="job-description">Testing Elements and helping me format my css</p>
+					</label>
+					<div class="job-modal">
+						<label for="job2-toggle" class="modal-bg"></label>
+						<div class="modal-content">
+						  <h2>Elements Tester</h2>
+						  <p><strong>Company:</strong> Goobers</p>
+						  <p><strong>Location:</strong> Melbourne</p>
+						  <p><strong>Yearly Salary:</strong> $65 000</p>
+						  <p>Insert Job Description here</p>
+						  <label for="job2-toggle" class="exit">&times;</label>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+		</div>
+
 	</main>
 </body>
 
