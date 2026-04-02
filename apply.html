@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Apply</title>
 	<img src="images/logo.png" alt = "Goobers Logo" id="logo">
     <link rel="stylesheet" href="/styles/style.css">
   </head>
@@ -26,9 +26,56 @@
 		  </nav>
 	  </header>
 
-	  <main>
-		  <div>
-		  </div>
+	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+	  
+	<main>
+		
+		<br><br>
+
+		<fieldset>
+			<label for="Job_Reference_Number">Job Reference Number:</label>
+			<input type="text" id="studentID" name="studentID"
+               required pattern="[a-zA-Z0-9]{5}" placeholder="Max of 5 Characters">
+
+			<br><br><br>
+			
+			<label for="First_Name">First Name:</label>
+			<input type="text" id="First_Name" name="First_Name"
+				required maxlength="20" pattern="[A-Za-z]+"
+				placeholder="First name">
+
+			<br><br><br>
+
+			<label for="Last_Name">Last Name:</label>
+			<input type="text" id="Last_Name" name="Last_Name"
+				required maxlength="20" pattern="[A-Za-z]+"
+				placeholder="Last name">
+
+			<br><br><br>
+
+			<label for="DOB">Date Of Birth</label>
+
+			<br><br><br>
+
+		</fieldset>
+
+		<br>
+
+		<fieldset> 
+			<legend>Select Your Gender</legend>
+			<label><input type="radio" name="unit" value="Male" required> Male</label>
+			<label><input type="radio" name="unit" value="Female"> Female</label>
+			<label><input type="radio" name="unit" value="NonBinary"> Non Binary</label>
+			<label><input type="radio" name="unit" value="Undefined"> Prefer not to say</label>
+
+		</fieldset>
+
+		<br><br>
+
+		<button type="submit">Book</button>
+    	<button type="reset">Reset Form</button>
+
 	  </main>
+	</form>
   </body>
 </html>
