@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 .modal-toggle {
@@ -40,7 +41,7 @@
 /* ref: https://www.w3schools.com/howto/howto_css_modals.asp */
 /* Job Modal Style */
 .job-modal {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 10;
     left: 0;
@@ -53,16 +54,23 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
 }
 
 .modal-content {
     position: relative;
     background-color: white;
     max-width: 600px;
+    width: 80%;
     padding: 20px;
     border: 1px solid gray;
-    width: 80%;
-    border: 5px;
+    border-radius: 5px;
+
+    transform: translateY(-30px) scale(0.95);
+    transition: transform 0.2s ease;
 }
 
 .modal-bg {
@@ -73,8 +81,13 @@
 }
 /* Display Modal Logic */
 .modal-toggle:checked ~  .job-modal {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
   }
+
+.modal-toggle:checked ~ .job-modal .modal-content {
+    transform: translateY(0) scale(1);
+}
   
 
 .exit {
