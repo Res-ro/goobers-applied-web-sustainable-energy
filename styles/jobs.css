@@ -107,3 +107,12 @@
     color: darkred;
     cursor: pointer;
 }
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #bc911a;
+  color: white;
+}

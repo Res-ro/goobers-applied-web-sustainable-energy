@@ -1,21 +1,12 @@
-
-
+/* Reset */
 body, main {
-	width: 100%;
-	margin: 0; /* Remove default white space, edges hit actual page edges */
-	padding: 0;
-}
-
-
-#links ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between; /* Spaces each element out evenly */
-  margin: 0;
+  width: 100%;
+  margin: 0; /* Remove default white space, edges hit actual page edges */
   padding: 0;
-  cursor: pointer;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
+/* Logo */
 #logo {
   width: 100px;
   height: auto;
@@ -23,8 +14,47 @@ body, main {
   margin-right: 10px;
 }
 
+/* Header */
 #header h1 {
- line-height: 100px;
- margin: 0;
- padding: 0;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+#links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Spaces each element out evenly */
+  margin: 0;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+#links li {
+  padding: 10px 0;
+}
+
+#links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black; /* default navbar text */
+}
+
+#links a:hover {
+  color: #bc911a; /* gold hover highlight */
+}
+
+/* Optional: Add spacing below navbar for clarity */
+#links {
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #bc911a;
+  color: white;
 }
