@@ -3,7 +3,7 @@
 body {
   font-family: Tahoma, Geneva, sans-serif;
   background-color: #f5f7fa;
-  color: black; 
+  color: black;
 }
 
 /* header */
@@ -23,7 +23,7 @@ body {
 #links ul {
   list-style: none;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 0 20px;
   cursor: pointer;
 }
@@ -45,7 +45,7 @@ main {
   width: 80%;
   margin: 30px auto;
   padding: 20px;
-  color: black; 
+  color: black;
 }
 
 /* tab content */
@@ -61,30 +61,32 @@ main {
   border-radius: 25px;
   display: inline-block;
   background-color: #ecf0f1;
-  color: black; 
+  color: black;
 }
 
 .tabs :hover {
-  background-color: #bc911a; 
+  background-color: #bc911a;
   color: white;
 }
 
 /* sections */
-section {
+.contentBox {
   margin-bottom: 40px;
   padding: 25px;
   border-radius: 15px;
   background-color: white;
+  border: 2px solid white;
+  transition: background-color 0.5s ease, border-color 0.5s ease; /* Seamless colour transition */
 }
 
-section:hover {
-  background-color: #e0f7f1; 
-  border: 2px solid #bc911a; 
+.contentBox:hover {
+  background-color: #e0f7f1;
+  border: 2px solid #bc911a;
 }
 
 /* subheadings */
 h2 {
-  color: #bc911a; 
+  color: #bc911a;
   margin-bottom: 15px;
 }
 
