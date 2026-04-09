@@ -90,8 +90,5 @@ footer {
 }
 
 form {
-	height: 600px;
-	width: 400px;
-	background-color: blue;
-	border: 2px solid black;
+	width: 100%;
 }
