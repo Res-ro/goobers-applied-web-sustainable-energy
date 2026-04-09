@@ -1,0 +1,29 @@
+
+/* Setting the _font, _font colour, and background colour for the entire page */
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: #f5f7fa;
+  color: black;
+}
+
+
+/* Turning text_input boxes from square into oval shaped */
+
+input[type="text"] {
+    border-radius: 20px;
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+}
+
+input[type="email"] {
+    border-radius: 20px;
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    border-radius: 20px;
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+}
