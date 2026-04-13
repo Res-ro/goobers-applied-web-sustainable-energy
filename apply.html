@@ -1,189 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply</title>
-	<img src="images/logo.png" alt = "Goobers Logo" id="logo">
-	<link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/apply.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="/styles/master.css">
+</head>
 
-  <body>
-	  <header>
-		  <div id = "header">
-			<h1>Job Applications</h1>
-		  </div>
-		  <hr>
-		  <nav id="links">
-			  <ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="info.html">Information</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li><a href="apply.html">Apply</a></li>
-				<li><a href="about_us.html">About Us</a></li>
-			  </ul>
+<body>
 
-		  </nav>
-		<link rel="stylesheet" href="styles/apply.css">
-	  </header>
+  <header>
 
-	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-	  
-	<main>
-		
-		<br><br>
+    <div id="header">
+      <img src="images/logo.png" alt="Goobers Logo" id="logo">
+      <h1>Job Applications</h1>
+    </div>
 
-		<fieldset>
-			<!-- Job Reference Number -->
-			<label for="Job_Reference_Number">Job Reference Number:</label>
-			<input type="text" id="studentID" name="studentID"
-               required pattern="[a-zA-Z0-9]{5}" placeholder="Max of 5 Characters">
+    <hr>
 
-			<br><br><br>
-			
-			<!-- First Name -->
-			<label for="First_Name">First Name:</label>
-			<input type="text" id="First_Name" name="First_Name"
-				required maxlength="20" pattern="[A-Za-z]+"
-				placeholder="First name">
+    <nav id="links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+      </ul>
+    </nav>
 
-			<br><br><br>
+  </header>
 
-			<!-- Last Name  -->
-			<label for="Last_Name">Last Name:</label>
-			<input type="text" id="Last_Name" name="Last_Name"
-				required maxlength="20" pattern="[A-Za-z]+"
-				placeholder="Last name">
+  <main>
 
-			<br><br><br>
+    <section class="application-form">
+      <h2>Job Application Form</h2>
 
-			<!-- Date of Birth -->
-			<label for="DOB">Date Of Birth</label>
-			<input type="text" id="dob" name="dob"
-				required
-				pattern="\d{2}/\d{2}/\d{4}"
-				placeholder="dd/mm/yyyy"
-				title="Enter date in dd/mm/yyyy format">
+      <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
-			<br><br><br>
+        <!-- job reference number -->
+        <section class="reference">
+          <label for="ref_number">Job Reference Number</label>
+          <input type="text" id="ref_number" name="ref_number" pattern="\w{5}"
+                 maxlength="5" placeholder="12345" required><br>
+        </section>
 
-		</fieldset>
+        <!-- Personal Info -->
+        <section class="personal">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name"
+                 pattern=".*" maxlength="20" placeholder="John" required><br>
 
-		<br>
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name"
+                 pattern=".*" maxlength="20" placeholder="Smith" required><br>
 
-		<fieldset> 
-			<!-- Gender -->
-			<legend>Select Your Gender</legend>
-			<label><input type="radio" name="unit" value="Male" required> Male</label>
-			<label><input type="radio" name="unit" value="Female"> Female</label>
-			<label><input type="radio" name="unit" value="NonBinary"> Non Binary</label>
-			<label><input type="radio" name="unit" value="Undefined"> Prefer not to say</label>
+          <label for="date_of_birth">Date of Birth</label>
+          <input type="text" id="date_of_birth" name="date_of_birth"
+                 pattern="[0-3]?[1-9]/[0-3]?[1-9]/[0-9]{4}" placeholder="dd/mm/yyyy" required><br>
 
-		</fieldset>
+          <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
 
-		<br><br>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+          </fieldset>
+        </section>
 
-		<fieldset>
-			<!-- Street Address -->
-			<label for="Street_Address">Street Address:</label>
-			<input type="text" id="street_address" name="street_address"
-				required maxlength="40" 
-				placeholder="e.g. 123 Main St">
+        <!-- Address -->
+        <section class="address">
+          <label for="street_address">Street Address</label>
+          <input type="text" id="street_address" name="street_address"
+                 pattern=".*" maxlength="40" placeholder="123 Goober Street" required><br>
 
-			<br><br>
+          <label for="suburb_or_town">Suburb/Town</label>
+          <input type="text" id="suburb_or_town" name="suburb_or_town"
+                 pattern=".*" maxlength="40" placeholder="Hawthorn" required><br>
 
-			<!-- Suburb / Town -->
-			<label for="suburb">Suburb / Town</label>
-			<input type="text" id="suburb" name="suburb"
-			required maxlength="40"
-			placeholder="e.g. Hawthorn">
+          <label for="state">State</label>
+          <select name="state" id="state" required>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+          </select><br>
 
-			<br><br>
+          <label for="postcode">Postcode</label>
+          <input type="text" id="postcode" name="postcode"
+                 pattern="\d{4}" maxlength="4" placeholder="0000" required><br>
+        </section>
 
-			<!-- State -->
-			<label for="state"> State:</label>
-			<select id="state" name=""state" required>
-				<option value="">--Select State--</option>
-				<option value="VIC">VIC</option>
-				<option value="NSW">NSW</option>
-				<option value="QLD">QLD</option>
-				<option value="NT">NT</option>
-				<option value="WA">WA</option>
-				<option value="SA">SA</option>
-				<option value="TAS">TAS</option>
-				<option value="ACT">ACT</option>
-			</select>
+        <!-- Contact details -->
+        <section class="contact">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required><br>
 
-			<br><br>
+          <label for="phone_number">Phone Number</label>
+          <input type="tel" name="phone_number" id="phone_number"
+                 pattern="\d{8,12}" required><br>
+        </section>
 
-			<!-- Postcode -->
-			<label for="postcode">Postcode</label>
-			<input type="text" id="postcode" name="postcode"
-				required pattern="\d{4}" maxlength="4"
-				placeholder="e.g. 5526">
+        <!-- Skills info -->
+        <section class="skills">
+          <div class="skills-grid">
 
-		</fieldset>
+            <label>Skills</label><br><br>
 
-		<br><br>
+            <label>HTML</label>
+            <input type="checkbox" name="skills[]" id="html" value="HTML">
 
-		<fieldset>
-			<!-- Email -->
-			<label for="email">Email</label>
-			<input type="email" id="email" name="email"
-				required
-				placeholder="example@gmail.com">
-			
-			<br><br>
+            <label>CSS</label>
+            <input type="checkbox" name="skills[]" id="css" value="CSS">
 
-			<!-- Phone Number -->
-			 <label for="phone">Phone Number</label>
-			 <input type="text" id="phone" name="phone"
-			 	required
-				pattern="\d{8,12}"
-				placeholder="8-12 digits"
-				title="Enter a phone number">
+            <label>JavaScript</label>
+            <input type="checkbox" name="skills[]" id="javascript" value="JavaScript">
 
-		</fieldset>
+            <label>PHP</label>
+            <input type="checkbox" name="skills[]" id="php" value="PHP">
 
-		<br><br>
+            <label>MySQL</label>
+            <input type="checkbox" name="skills[]" id="mysql" value="MySQL"><br>
 
-		<fieldset>
-			<!-- Skill list -->
-			<label>Skills:</label><br>
+          </div>
 
-			<input type="checkbox" id="example1" name="skills" value="checkbox1">
-			<label for="example1">Example1</label><br>
+          <div class="other-grid">
+            <label for="other_skills">Other Skills:</label><br>
+            <textarea name="other_skills" id="other_skills" rows="5" cols="65"
+                      placeholder="Write a description of your skills here..."></textarea><br><br>
+          </div>
+        </section>
 
-			<input type="checkbox" id="example2" name="skills" value="checkbox2">
-			<label for="example2">Example2</label><br>
+        <button type="submit">Submit</button>
 
-			<input type="checkbox" id="example3" name="skills" value="checkbox3">
-			<label for="example3">Example3</label><br>
+      </form>
+    </section>
 
-			<input type="checkbox" id="example4" name="skills" value="checkbox4">
-			<label for="example4">Example4</label><br>
+  </main>
 
-			<br><br>
-
-			<!-- Other Skills -->
-			<label for="other_skills">Other Skills</label><br>
-			<textarea id="other_skills" name="other_skills"
-				rows="4" cols="40"
-				placeholder="Enter any other skills here..."></textarea>
-
-		</fieldset>
-
-
-		<button type="submit">Book</button>
-    	<button type="reset">Reset Form</button>
-
-	  </main>
-	</form>
-	<footer>
-		<hr>
-		<p>&copy; 2026 Goobers. All rights reserved.</p>
+  <footer>
+    <hr>
+    <p>&copy; 2026 Goobers. All rights reserved.</p>
   </footer>
-  </body>
-</html>
 
+</body>
+</html>

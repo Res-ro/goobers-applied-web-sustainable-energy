@@ -1,0 +1,367 @@
+/* STYLE.CSS */
+
+/* Reset */
+body, main {
+  width: 100%;
+  margin: 0; /* Remove default white space, edges hit actual page edges */
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Logo */
+#logo {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Header */
+#header h1 {
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+#links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Spaces each element out evenly */
+  margin: 0;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+#links li {
+  padding: 10px 0;
+}
+
+#links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black; /* default navbar text */
+}
+
+#links a:hover {
+  color: #bc911a; /* gold hover highlight */
+}
+
+/* Optional: Add spacing below navbar for clarity */
+#links {
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #bc911a;
+  color: white;
+}
+
+
+/* ABOUT US CSS */
+
+/* body content */
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: #f5f7fa;
+  color: black;
+}
+
+/* header */
+#header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* main content */
+main {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* sections */
+.contentBox {
+  margin-bottom: 40px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid white;
+  transition: background-color 0.5s ease,
+              border-color 0.5s ease;
+}
+
+.contentBox:hover {
+  background-color: #e0f7f1;
+  border: 2px solid #bc911a;
+}
+
+/* headings */
+h2 {
+  color: #bc911a;
+}
+
+/* nested lists */
+.contentBox ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* definition list */
+dt {
+  font-weight: bold;
+  color: #bc911a;
+}
+
+dd {
+  margin-left: 20px;
+}
+
+/* student ID styling */
+.student-id {
+  font-weight: bold;
+  color: #bc911a;
+}
+
+/* figure */
+figure {
+  text-align: center;
+  border: 2px solid #bc911a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff; 
+}
+
+th, td {
+  padding: 10px;
+  border: 2px solid #bc911a; 
+  text-align: center;
+}
+
+th {
+  background-color: #bc911a; 
+  color: #ffffff;
+}
+
+tr:hover td {
+  background-color: #d6b65c; 
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #bc911a;
+}
+
+
+/* APPLY CSS */
+
+/* MAIN FORM CARD */
+form {
+  width: 600px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 25px;
+
+  background: #ffffff;
+  border: 2px solid #bc911a;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SECTION "BUBBLES" */
+.reference,
+.personal,
+.address,
+.contact,
+.other {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 15px;
+  border-radius: 12px;
+
+  background: #f4f6f8;
+}
+
+/* skills section container */
+.skills {
+  display: grid;
+  gap: 24px;
+
+  padding: 15px;
+  border-radius: 12px;
+  background: #f4f6f8;
+}
+
+/* LABELS */
+label {
+  font-weight: bold;
+}
+
+/* INPUTS */
+input,
+select,
+textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #bc911a;
+  box-shadow: 0 0 6px rgba(188,145,26,0.4);
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  background: #bc911a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #a87f14;
+}
+
+
+/* JOBS CSS */
+
+/* Job Filtering Style */
+.job-controls {
+  margin: auto 25%;
+}
+
+/* Job Card Formatting and Function */
+.job-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.modal-toggle {
+  display: none;
+}
+
+/* Job Card Style */
+.job-cards {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 30%;
+  height: 300px;
+  border: 1px solid lightgrey;
+  margin: 1%;
+}
+
+.job-cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.job-card-contents {
+  padding: 2px 16px;
+  font-size: x-large;
+}
+
+/* Job Modal Style */
+.job-modal {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  max-width: 600px;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  transform: translateY(-30px) scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+.modal-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.modal-toggle:checked ~ .job-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-toggle:checked ~ .job-modal .modal-content {
+  transform: translateY(0) scale(1);
+}
+
+.exit {
+  color: red;
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 20px 25px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.exit:hover,
+.exit:focus {
+  color: darkred;
+  cursor: pointer;
+}

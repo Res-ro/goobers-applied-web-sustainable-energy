@@ -1,4 +1,3 @@
-
 /* body content */
 body {
   font-family: Tahoma, Geneva, sans-serif;
@@ -25,7 +24,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  cursor: pointer;
 }
 
 #links li {
@@ -34,6 +32,7 @@ body {
 
 #links a {
   color: black;
+  text-decoration: none;
 }
 
 #links a:hover {
@@ -45,28 +44,6 @@ main {
   width: 80%;
   margin: 30px auto;
   padding: 20px;
-  color: black;
-}
-
-/* tab content */
-.tabs {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.tabs a {
-  padding: 12px 25px;
-  margin: 0 5px;
-  font-weight: bold;
-  border-radius: 25px;
-  display: inline-block;
-  background-color: #ecf0f1;
-  color: black;
-}
-
-.tabs :hover {
-  background-color: #bc911a;
-  color: white;
 }
 
 /* sections */
@@ -76,7 +53,8 @@ main {
   border-radius: 15px;
   background-color: white;
   border: 2px solid white;
-  transition: background-color 0.5s ease, border-color 0.5s ease; /* Seamless colour transition */
+  transition: background-color 0.5s ease,
+              border-color 0.5s ease;
 }
 
 .contentBox:hover {
@@ -84,10 +62,70 @@ main {
   border: 2px solid #bc911a;
 }
 
-/* subheadings */
+/* headings */
 h2 {
   color: #bc911a;
-  margin-bottom: 15px;
+}
+
+/* nested lists */
+.contentBox ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* definition list */
+dt {
+  font-weight: bold;
+  color: #bc911a;
+}
+
+dd {
+  margin-left: 20px;
+}
+
+/* student ID styling */
+.student-id {
+  font-weight: bold;
+  color: #bc911a;
+}
+
+/* figure */
+figure {
+  text-align: center;
+  border: 2px solid #bc911a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff; 
+}
+
+th, td {
+  padding: 10px;
+  border: 2px solid #bc911a; 
+  text-align: center;
+}
+
+/* header styling */
+th {
+  background-color: #bc911a; 
+  color: #ffffff;
+}
+
+
+/* hover effect */
+tr:hover td {
+  background-color: #d6b65c; 
+}
+
+/* caption styling */
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #bc911a;
 }
 
 /* footer */
