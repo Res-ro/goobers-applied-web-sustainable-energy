@@ -1,4 +1,4 @@
-/* STYLE.CSS */
+/* STYLES.CSS */
 
 /* Reset */
 body, main {
@@ -44,7 +44,7 @@ body, main {
 }
 
 #links a:hover {
-  color: #bc911a; /* gold hover highlight */
+  color: #8b6b13; /* gold hover highlight */
 }
 
 /* Optional: Add spacing below navbar for clarity */
@@ -57,7 +57,7 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 30px;
-  background-color: #bc911a;
+  background-color: #8b6b13;
   color: white;
 }
 
@@ -97,13 +97,13 @@ main {
 }
 
 .contentBox:hover {
-  background-color: #e0f7f1;
-  border: 2px solid #bc911a;
+  background-color: #ce9f1e7d;
+  border: 2px solid #8b6b13;
 }
 
 /* headings */
 h2 {
-  color: #bc911a;
+  color: #8b6b13;
 }
 
 /* nested lists */
@@ -115,7 +115,7 @@ h2 {
 /* definition list */
 dt {
   font-weight: bold;
-  color: #bc911a;
+  color: #8b6b13;
 }
 
 dd {
@@ -125,13 +125,13 @@ dd {
 /* student ID styling */
 .student-id {
   font-weight: bold;
-  color: #bc911a;
+  color: #8b6b13;
 }
 
 /* figure */
 figure {
   text-align: center;
-  border: 2px solid #bc911a;
+  border: 2px solid #8b6b13;
   padding: 10px;
   border-radius: 10px;
 }
@@ -145,12 +145,12 @@ table {
 
 th, td {
   padding: 10px;
-  border: 2px solid #bc911a; 
+  border: 2px solid #8b6b13; 
   text-align: center;
 }
 
 th {
-  background-color: #bc911a; 
+  background-color: #8b6b13; 
   color: #ffffff;
 }
 
@@ -161,7 +161,7 @@ tr:hover td {
 caption {
   font-weight: bold;
   margin-bottom: 10px;
-  color: #bc911a;
+  color: #8b6b13;
 }
 
 
@@ -179,7 +179,7 @@ form {
   padding: 25px;
 
   background: #ffffff;
-  border: 2px solid #bc911a;
+  border: 2px solid #8b6b13;
   border-radius: 16px;
 
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -238,14 +238,14 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #bc911a;
+  border-color: #8b6b13;
   box-shadow: 0 0 6px rgba(188,145,26,0.4);
 }
 
 /* BUTTON */
 button {
   padding: 12px;
-  background: #bc911a;
+  background: #8b6b13;
   color: white;
   border: none;
   border-radius: 8px;
