@@ -5,13 +5,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test</title>
-	<link rel="stylesheet" href="/styles/style.css">
-	<link rel="stylesheet" href="/styles/jobs.css">
+	<link rel="stylesheet" href="/styles/master.css">
 </head>
 
 <body>
 	<header>
+		<div id="header">
+			<img src="images/logo.png" alt="Goobers Logo" id="logo">
+			<h1>Available Jobs</h1>
+		</div>
+
 		<hr>
+
 		<nav id="links">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -21,13 +26,10 @@
 				<li><a href="about_us.html">About Us</a></li>
 			</ul>
 		</nav>
-		<hr>
-		<div id="header">
-			<h1>Job Opportunities</h1>
-		</div>
 	</header>
 
 	<main>
+
 		<!--Job Filtering Elements-->
 		<div class="job-controls">
 			<input type="text" placeholder="Search jobs...">
@@ -37,8 +39,10 @@
 				<option value="sydney">Sydney</option>
 			</select>
 		</div>
+
 		<!--List of Jobs and Modals-->
 		<div class="job-cards-container">
+
 			<div class="job-cards">
 				<div class="job-card-contents">
 					<input type="checkbox" id="job1-toggle" class="modal-toggle" />
@@ -47,6 +51,7 @@
 						<p class="location">&copy Goobers - Melbourne</p>
 						<p class="job-description">Work on spreading awareness about sustainability...</p>
 					</label>
+
 					<div class="job-modal">
 						<label for="job1-toggle" class="modal-bg"></label>
 						<div class="modal-content">
@@ -62,7 +67,6 @@
 				</div>
 			</div>
 
-			
 			<div class="job-cards">
 				<div class="job-card-contents">
 					<input type="checkbox" id="job2-toggle" class="modal-toggle" />
@@ -71,28 +75,31 @@
 						<p class="location">&copy Goobers - Melbourne</p>
 						<p class="job-description">Testing Elements and helping me format my css</p>
 					</label>
+
 					<div class="job-modal">
 						<label for="job2-toggle" class="modal-bg"></label>
 						<div class="modal-content">
-						  <h2>Elements Tester</h2>
-						  <p><strong>Company:</strong> Goobers</p>
-						  <p><strong>Location:</strong> Melbourne</p>
-						  <p><strong>Yearly Salary:</strong> $65 000</p>
-						  <p>Insert Job Description here</p>
-						  <label for="job2-toggle" class="exit">&times;</label>
+							<h2>Elements Tester</h2>
+							<p><strong>Company:</strong> Goobers</p>
+							<p><strong>Location:</strong> Melbourne</p>
+							<p><strong>Yearly Salary:</strong> $65 000</p>
+							<p>Insert Job Description here</p>
+							<label for="job2-toggle" class="exit">&times;</label>
 						</div>
-					  </div>
+					</div>
+
 				</div>
 			</div>
-
 
 		</div>
 
 	</main>
- <footer>
-    <hr>
-    <p>&copy; 2026 Goobers. All rights reserved.</p>
-  </footer>
+
+	<footer>
+		<hr>
+		<p>&copy; 2026 Goobers. All rights reserved.</p>
+	</footer>
+
 </body>
 
 </html>
