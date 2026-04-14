@@ -370,3 +370,16 @@ button:hover {
   color: darkred;
   cursor: pointer;
 }
+
+.apply-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.job-ref {
+  font-size: 0.75rem;
+  color: grey;
+  font-weight: normal;
+}
