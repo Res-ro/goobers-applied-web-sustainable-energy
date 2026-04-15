@@ -76,7 +76,7 @@
 
           <label for="suburb_or_town">Suburb/Town</label>
           <input type="text" id="suburb_or_town" name="suburb_or_town"
-                 pattern=".*" maxlength="40" placeholder="Hawthorn" required><br>
+                 pattern="[A-Za-z]{2,40}" maxlength="40" placeholder="Hawthorn" required><br>
 
           <label for="state">State</label>
           <select name="state" id="state" required>
@@ -102,7 +102,7 @@
 
           <label for="phone_number">Phone Number</label>
           <input type="tel" name="phone_number" id="phone_number"
-                 pattern="\d{8,12}" required><br>
+                 pattern="\d{8,12}" maxlength="12" required><br>
         </section>
 
         <!-- Skills info -->
