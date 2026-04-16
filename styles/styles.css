@@ -140,22 +140,22 @@ figure {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 th, td {
   padding: 10px;
-  border: 2px solid #8b6b13; 
+  border: 2px solid #8b6b13;
   text-align: center;
 }
 
 th {
-  background-color: #8b6b13; 
+  background-color: #8b6b13;
   color: #ffffff;
 }
 
 tr:hover td {
-  background-color: #d6b65c; 
+  background-color: #d6b65c;
 }
 
 caption {
