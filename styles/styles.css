@@ -9,7 +9,14 @@
      100% {
          background-position: 0% 50%;
     }
+ }
+
+ @-webkit-keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
  body, main {
      width: 100%;
      margin: 0;
@@ -44,6 +51,14 @@
      height: auto;
      float: left;
      margin-right: -8px;
+}
+
+#highlights img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
  #logo:hover {
@@ -411,6 +426,18 @@ th, td {
 
 /* responsive criteria */
 @media (max-width: 768px) {
+body, main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
+  background-size: 400% 400%;
+  animation: gradientShift 4s ease infinite;
+  -webkit-animation: gradientShift 4s ease infinite;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
 
   #header {
     flex-wrap: wrap;
