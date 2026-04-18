@@ -18,13 +18,10 @@
      background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
      background-size: 400% 400%;
      animation: gradientShift 5s ease infinite;
+     -webkit-transform: translateZ(0);
+     transform: translateZ(0); /* to fix gpu rendering */
 }
- main {
-     width: 80%;
-     margin: 30px auto;
-     padding: 20px;
-     background: transparent;
-}
+
  main a {
      display: inline-block;
      color: #8b6b13;
@@ -46,13 +43,23 @@
      width: 100px;
      height: auto;
      float: left;
-     margin-right: 10px;
+     margin-right: -8px;
 }
+
  #logo:hover {
      transform: scale(1.1) rotate(-3deg);
 }
 /* Header */
- #header h1 {
+
+#header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#header h1 {
      line-height: 100px;
      margin: 0;
      padding: 0;
@@ -140,11 +147,6 @@
 }
 /* ABOUT US CSS */
 /* body content */
- body {
-     font-family: Tahoma, Geneva, sans-serif;
-     background-color: #f5f7fa;
-     color: black;
-}
 /* header */
  #header {
      display: flex;
@@ -203,10 +205,13 @@
 }
 /* table */
  table {
-     width: 100%;
-     border-collapse: collapse;
-     background-color: #ffffff;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
+
  th, td {
      padding: 10px;
      border: 2px solid #8b6b13;
