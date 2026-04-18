@@ -17,7 +17,7 @@
      font-family: Verdana, Geneva, sans-serif;
      background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
      background-size: 400% 400%;
-     animation: gradientShift 5s ease infinite;
+     animation: gradientShift 4s ease infinite;
      -webkit-transform: translateZ(0);
      transform: translateZ(0); /* to fix gpu rendering */
 }
@@ -54,9 +54,8 @@
 #header {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  gap: 5px;
-  flex-wrap: wrap;
+  padding: 2px 20px;
+  gap: 2px;
 }
 
 #header h1 {
@@ -82,14 +81,16 @@
      box-sizing: border-box;
 }
  #search-box input {
-     border: none;
-     padding: 8px 14px;
-     background: transparent;
-     outline: none;
-     font-family: inherit;
-     width: 150px;
+  border: none;
+  padding: 8px 14px;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  width: 160px;
+  min-width: 60px;
 }
- #links {
+ 
+#links {
      margin: 0 auto 20px auto;
      width: fit-content;
      position: relative;
@@ -142,7 +143,7 @@
      margin-top: 30px;
      background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
      background-size: 400% 400%;
-     animation: gradientShift 5s ease infinite;
+     animation: gradientShift 4s ease infinite;
      color: rgb(0, 0, 0);
 }
 /* ABOUT US CSS */
