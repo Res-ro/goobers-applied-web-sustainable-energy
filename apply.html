@@ -35,14 +35,14 @@
       <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
         <!-- job reference number -->
-        <section class="reference">
+        <div class="reference">
           <label for="ref_number">Job Reference Number</label>
           <input type="text" id="ref_number" name="ref_number" pattern="\w{5}"
                  maxlength="5" placeholder="12345" required><br>
-        </section>
+        </div>
 
         <!-- Personal Info -->
-        <section class="personal">
+        <div class="personal">
           <label for="first_name">First Name</label>
           <input type="text" id="first_name" name="first_name"
                  pattern=".*" maxlength="20" placeholder="John" required><br>
@@ -63,10 +63,10 @@
             <input type="radio" name="gender" id="female" value="female" required>
             <label for="female">Female</label>
           </fieldset>
-        </section>
+        </div>
 
         <!-- Address -->
-        <section class="address">
+        <div class="address">
           <label for="street_address">Street Address</label>
           <input type="text" id="street_address" name="street_address"
                  pattern=".*" maxlength="40" placeholder="123 Goober Street" required><br>
@@ -77,6 +77,7 @@
 
           <label for="state">State</label>
           <select name="state" id="state" required>
+            <option value="">-- Select a State --</option>
             <option value="VIC">VIC</option>
             <option value="NSW">NSW</option>
             <option value="QLD">QLD</option>
@@ -90,20 +91,20 @@
           <label for="postcode">Postcode</label>
           <input type="text" id="postcode" name="postcode"
                  pattern="\d{4}" maxlength="4" placeholder="0000" required><br>
-        </section>
+        </div>
 
         <!-- Contact details -->
-        <section class="contact">
+        <div class="contact">
           <label for="email">Email</label>
           <input type="email" name="email" id="email" required placeholder="johnsmith@mymail.com"><br>
 
           <label for="phone_number">Phone Number</label>
           <input type="tel" name="phone_number" id="phone_number"
                  pattern="\d{3,4}\s?\d{3,4}\s?\d{3}" maxlength="12" required placeholder="0000 000 000"><br>
-        </section>
+        </div>
 
         <!-- Skills info -->
-        <section class="skills">
+        <div class="skills">
           <div class="skills-grid">
 
             <label>Skills</label><br><br>
@@ -130,7 +131,7 @@
             <textarea name="other_skills" id="other_skills" rows="5" cols="65"
                       placeholder="Write a description of your skills here..."></textarea><br><br>
           </div>
-        </section>
+        </div>
 
         <button type="submit">Submit</button>
 
