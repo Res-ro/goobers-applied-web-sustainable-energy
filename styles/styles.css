@@ -24,7 +24,7 @@
      font-family: Verdana, Geneva, sans-serif;
      background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
      background-size: 400% 400%;
-     animation: gradientShift 4s ease infinite;
+     animation: gradientShift 32s ease infinite;
      -webkit-transform: translateZ(0);
      transform: translateZ(0); /* to fix gpu rendering */
 }
@@ -165,7 +165,7 @@ main {
      margin-top: 30px;
      background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
      background-size: 400% 400%;
-     animation: gradientShift 4s ease infinite;
+     animation: gradientShift 32s ease infinite;
      color: rgb(0, 0, 0);
 }
 /* ABOUT US CSS */
