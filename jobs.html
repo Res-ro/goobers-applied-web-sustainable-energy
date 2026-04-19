@@ -19,8 +19,21 @@
 <body>
 	<header>
 		<div id="header">
-			<a href="index.html"><img src="images/logo.png" alt="Goobers Logo" id="logo"></a>
+		      <a href="index.html">
+			  <img src="images/logo.png" alt="Goobers Logo" id="logo" aria-label="Go to homepage" title="Take me home!">
+		      </a>
 			<h1>Goobers Careers</h1>
+        <form id="search-box" action="#" aria-label="Site search">
+
+          <label for="search-input" class="visually-hidden">Search the site</label>
+
+          <input type="text" id="search-input" placeholder="Search..." name="search" pattern="[A-Za-z0-9\s.,'-]{1,100}" maxlength="100" aria-label="Search input field">
+
+          <button type="submit" aria-label="Submit search">
+            Search
+          </button>
+
+        </form>
 		</div>
 
 		<nav id="links">

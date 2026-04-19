@@ -12,15 +12,28 @@
   <header>
 
     <div id="header">
-     <a href="index.html"><img src="images/logo.png" alt="Goobers Logo" id="logo"></a>
+	      <a href="index.html">
+		  <img src="images/logo.png" alt="Goobers Logo" id="logo" aria-label="Go to homepage" title="Take me home!">
+	      </a>
       <h1>Job Applications</h1>
+        <form id="search-box" action="#" aria-label="Site search">
+
+          <label for="search-input" class="visually-hidden">Search the site</label>
+
+          <input type="text" id="search-input" placeholder="Search..." name="search" pattern="[A-Za-z0-9\s.,'-]{1,100}" maxlength="100" aria-label="Search input field">
+
+          <button type="submit" aria-label="Submit search">
+            Search
+          </button>
+
+        </form>
     </div>
 
-    <nav id="links">
+    <nav id="links" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="jobs.html">Jobs</a></li>
-        <li><a href="apply.html">Apply</a></li>
+        <li><a href="apply.html" aria-current="page">Apply</a></li>
         <li><a href="about_us.html">About Us</a></li>
       </ul>
     </nav>
@@ -29,54 +42,55 @@
 
   <main>
 
-    <section class="application-form">
-      <h2>Job Application Form</h2>
+    <section class="application-form" aria-labelledby="form-title">
+      <h2 id="form-title">Job Application Form</h2>
 
-      <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
+      <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post" aria-label="Job Application Form">
 
         <!-- job reference number -->
-        <section class="reference">
+        <div class="reference">
           <label for="ref_number">Job Reference Number</label>
           <input type="text" id="ref_number" name="ref_number" pattern="\w{5}"
-                 maxlength="5" placeholder="12345" required><br>
-        </section>
+                 maxlength="5" placeholder="12345" aria-label="required" required><br>
+        </div>
 
         <!-- Personal Info -->
-        <section class="personal">
+        <div class="personal">
           <label for="first_name">First Name</label>
           <input type="text" id="first_name" name="first_name"
-                 pattern=".*" maxlength="20" placeholder="John" required><br>
+                 pattern=".*" maxlength="20" placeholder="John" aria-label="required" required><br>
 
           <label for="last_name">Last Name</label>
           <input type="text" id="last_name" name="last_name"
-                 pattern=".*" maxlength="20" placeholder="Smith" required><br>
+                 pattern=".*" maxlength="20" placeholder="Smith" aria-label="required" required><br>
 
           <label for="date_of_birth">Date of Birth</label>
           <input type="text" id="date_of_birth" name="date_of_birth"
-                 pattern="[0-3]?[1-9]/[0-3]?[1-9]/[0-9]{4}" placeholder="dd/mm/yyyy" required><br>
+                 pattern="[0-3]?[1-9]/[0-3]?[1-9]/[0-9]{4}" placeholder="dd/mm/yyyy" aria-label="required" required><br>
 
-          <fieldset>
-            <legend><strong>Gender</strong></legend>
-            <input type="radio" name="gender" id="male" value="male" required>
+          <fieldset aria-labelledby="gender-legend">
+            <legend id="gender-legend"><strong>Gender</strong></legend>
+            <input type="radio" name="gender" id="male" value="male" aria-label="required" required>
             <label for="male">Male</label>
 
-            <input type="radio" name="gender" id="female" value="female" required>
+            <input type="radio" name="gender" id="female" value="female" aria-label="required" required>
             <label for="female">Female</label>
           </fieldset>
-        </section>
+        </div>
 
         <!-- Address -->
-        <section class="address">
+        <div class="address">
           <label for="street_address">Street Address</label>
           <input type="text" id="street_address" name="street_address"
-                 pattern=".*" maxlength="40" placeholder="123 Goober Street" required><br>
+                 pattern=".*" maxlength="40" placeholder="123 Goober Street" aria-label="required" required><br>
 
           <label for="suburb_or_town">Suburb/Town</label>
           <input type="text" id="suburb_or_town" name="suburb_or_town"
-                 pattern="[A-Za-z]{2,40}" maxlength="40" placeholder="Hawthorn" required><br>
+                 pattern="[A-Za-z]{2,40}" maxlength="40" placeholder="Hawthorn" aria-label="required" required><br>
 
           <label for="state">State</label>
-          <select name="state" id="state" required>
+          <select name="state" id="state" aria-label="required" required>
+            <option value="">-- Select a State --</option>
             <option value="VIC">VIC</option>
             <option value="NSW">NSW</option>
             <option value="QLD">QLD</option>
@@ -89,40 +103,42 @@
 
           <label for="postcode">Postcode</label>
           <input type="text" id="postcode" name="postcode"
-                 pattern="\d{4}" maxlength="4" placeholder="0000" required><br>
-        </section>
+                 pattern="\d{4}" maxlength="4" placeholder="0000" aria-label="required" required><br>
+        </div>
 
         <!-- Contact details -->
-        <section class="contact">
+        <div class="contact">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required placeholder="johnsmith@mymail.com"><br>
+          <input type="email" name="email" id="email" aria-label="required" required placeholder="johnsmith@mymail.com"><br>
 
           <label for="phone_number">Phone Number</label>
           <input type="tel" name="phone_number" id="phone_number"
-                 pattern="\d{3,4}\s?\d{3,4}\s?\d{3}" maxlength="12" required placeholder="0000 000 000"><br>
-        </section>
+                 pattern="\d{3,4}\s?\d{3,4}\s?\d{3}" maxlength="12" aria-label="required" required placeholder="0000 000 000"><br>
+        </div>
 
         <!-- Skills info -->
-        <section class="skills">
+        <div class="skills">
           <div class="skills-grid">
 
-            <label>Skills</label><br><br>
+            <fieldset aria-labelledby="skills-legend">
+              <legend id="skills-legend"><Strong>Skills</Strong></legend>
 
-            <label>HTML</label>
-            <input type="checkbox" name="skills[]" id="html" value="HTML">
+              <label for="html">HTML</label>
+              <input type="checkbox" name="skills[]" id="html" value="HTML">
 
-            <label>CSS</label>
-            <input type="checkbox" name="skills[]" id="css" value="CSS">
+              <label for="css">CSS</label>
+              <input type="checkbox" name="skills[]" id="css" value="CSS">
 
-            <label>JavaScript</label>
-            <input type="checkbox" name="skills[]" id="javascript" value="JavaScript">
+              <label for="javascript">JavaScript</label>
+              <input type="checkbox" name="skills[]" id="javascript" value="JavaScript">
 
-            <label>PHP</label>
-            <input type="checkbox" name="skills[]" id="php" value="PHP">
+              <label for="php">PHP</label>
+              <input type="checkbox" name="skills[]" id="php" value="PHP">
 
-            <label>MySQL</label>
-            <input type="checkbox" name="skills[]" id="mysql" value="MySQL"><br>
+              <label for="mysql">MySQL</label>
+              <input type="checkbox" name="skills[]" id="mysql" value="MySQL"><br>
 
+            </fieldset>
           </div>
 
           <div class="other-grid">
@@ -130,16 +146,16 @@
             <textarea name="other_skills" id="other_skills" rows="5" cols="65"
                       placeholder="Write a description of your skills here..."></textarea><br><br>
           </div>
-        </section>
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" aria-label="Submit job application form">Submit</button>
 
       </form>
     </section>
 
   </main>
 
-  <footer>
+  <footer aria-label="Footer information">
     <hr>
     <p>&copy; 2026 Goobers. All rights reserved.</p>
     <p>

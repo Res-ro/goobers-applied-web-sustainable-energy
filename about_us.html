@@ -12,12 +12,25 @@
       </style>
    </head>
    <body>
-      <header role="banner">
+      <header>
          <div id = "header">
-            <a href="index.html"><img src="images/logo.png" alt="Goobers Logo" id="logo"></a>
+	      <a href="index.html">
+		  <img src="images/logo.png" alt="Goobers Logo" id="logo" aria-label="Go to homepage" title="Take me home!">
+	      </a>
             <h1>About Us</h1>
+        <form id="search-box" action="#" aria-label="Site search">
+
+          <label for="search-input" class="visually-hidden">Search the site</label>
+
+          <input type="text" id="search-input" placeholder="Search..." name="search" pattern="[A-Za-z0-9\s.,'-]{1,100}" maxlength="100" aria-label="Search input field">
+
+          <button type="submit" aria-label="Submit search">
+            Search
+          </button>
+
+        </form>
          </div>
-         <nav id="links" role="navigation" aria-label="Main Navigation">
+         <nav id="links" aria-label="Main Navigation">
             <ul>
                <li><a href="index.html">Home</a></li>
                <li><a href="jobs.html">Jobs</a></li>
@@ -26,7 +39,7 @@
             </ul>
          </nav>
       </header>
-      <main role="main">
+      <main>
          <!-- group name and class time -->
          <section id="groupInfo" class="contentBox" aria-label="Group Information">
             <h2>Group Information</h2>
@@ -48,28 +61,28 @@
                <dd class="student-id">Student ID: 106501062</dd>
                <dd>Worked on the About Us page.</dd>
                <dd>
-                  “Pourquoi les programmeurs préfèrent-ils le mode sombre? Parce que la lumière attire les bugs.”  
+                  “Pourquoi les programmeurs préfèrent-ils le mode sombre? Parce que la lumière attire les bugs.”
                   (“Why do programmers prefer dark mode? Because light attracts bugs.”)
                </dd>
                <dt>Tyler</dt>
                <dd class="student-id">Student ID: 106524221</dd>
                <dd>Worked on the Apply page.</dd>
                <dd>
-                  "Hay 10 tipos de personas en el mundo: las que entienden el binario y las que no."  
+                  "Hay 10 tipos de personas en el mundo: las que entienden el binario y las que no."
                   (There are 10 types of people in the world: those who understand binary, and those who don’t.)
                </dd>
                <dt>Huw</dt>
                <dd class="student-id">Student ID: 106515526</dd>
                <dd>Worked on the Jobs page.</dd>
                <dd>
-                  "SQLクエリがバーに入って2つのテーブルに近づき、『一緒に結合できますか？』と尋ねた"  
+                  "SQLクエリがバーに入って2つのテーブルに近づき、『一緒に結合できますか？』と尋ねた"
                   (A SQL query goes into a bar, walks up to two tables and asks, ‘Can I join you?’)
                </dd>
                <dt>Ned</dt>
                <dd class="student-id">Student ID: 102566889</dd>
                <dd>Worked on the Information page.</dd>
                <dd>
-                  "Um zu verstehen, was Rekursion ist, musst du zuerst Rekursion verstehen."  
+                  "Um zu verstehen, was Rekursion ist, musst du zuerst Rekursion verstehen."
                   (To understand what recursion is, you must first understand recursion.)
                </dd>
             </dl>
@@ -118,7 +131,7 @@
          </section>
       </main>
       <!--footer -->
-      <footer role="contentinfo">
+      <footer>
          <hr>
          <p>&copy; 2026 Goobers. All rights reserved.</p>
          <p>
