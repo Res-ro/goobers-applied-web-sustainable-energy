@@ -373,7 +373,7 @@ th, td {
      width: 30%;
      min-height: 300px;
      border: 1px solid lightgrey;
-     background-color: rgba(240, 213, 144, 0.775);
+     background-color: rgba(255, 255, 255, 0.75);
      margin: 1%;
 }
  .job-description {
@@ -386,6 +386,7 @@ th, td {
 }
  .job-cards:hover {
      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+     background-color: rgba(255, 255, 255, 0.9);
 }
  .job-card-contents {
      padding: 2px 16px;
