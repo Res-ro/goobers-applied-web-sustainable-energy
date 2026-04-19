@@ -315,6 +315,26 @@ th, td {
      border-color: #8b6b13;
      box-shadow: 0 0 6px rgba(188,145,26,0.4);
 }
+
+/* Fieldset and legend change */
+.skills-grid fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.skills-grid fieldset legend {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.skills-grid fieldset label {
+    display: inline;
+}
+
 /* BUTTON */
  button {
      padding: 12px;
