@@ -477,6 +477,7 @@ th, td {
      border: 1px solid lightgrey;
      background-color: rgba(255, 255, 255, 0.75);
      margin: 1%;
+     text-align: center;
 }
  .job-description {
      display: -webkit-box;
