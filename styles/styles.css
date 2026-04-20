@@ -1,3 +1,7 @@
+ /* MAIN STYLES / index.html */
+/* Some parts of this section of code were generated or adapted using ChatGPT (OpenAI, version GPT-5, October 2025). 
+All AI-generated code was reviewed and modified by the author before use.*/
+ 
  /* MAIN STYLES */
  @keyframes gradientShift {
      0% {
@@ -10,6 +14,8 @@
          background-position: 0% 50%;
     }
  }
+
+ /* AI-assisted structure for smooth gradient animation shifts (ChatGPT GPT-5, October 2025).*/
 
  @-webkit-keyframes gradientShift {
   0%   { background-position: 0% 50%; }
@@ -26,7 +32,8 @@
      background-size: 400% 400%;
      animation: gradientShift 16s ease infinite;
 }
-
+/* AI-assisted refinement of background transition effects for smoother user experience. (ChatGPT GPT-5, October 2025).*/
+/* MAIN LINK STYLING */
  main a {
      display: inline-block;
      color: #8b6b13;
@@ -43,6 +50,7 @@
      transform: translateY(-2px);
      box-shadow: 0 4px 12px rgba(139, 107, 19, 0.3);
 }
+/* AI-assisted refinement of hover transition effects and button like shape for links (ChatGPT GPT-5, October 2025).*/
 /* Logo */
  #logo {
      width: 100px;
@@ -62,6 +70,8 @@
   white-space: nowrap;
   border: 0;
 }
+/* Visually hidden function inspired by: https://a11y-guidelines.orange.com/en/articles/accessible-hiding/#:~:text=The%20conventional%20way%20is%20to,also%20for%20screen%20reader%20users. Accessed: 18 Apr 2026 */
+
 
 #highlights img {
   max-width: 80%;
@@ -74,6 +84,15 @@
  #logo:hover {
      transform: scale(1.1) rotate(-3deg);
 }
+/* Transform function inspired by: https://www.w3schools.com/cssref/css3_pr_transform.php Accessed: 18 Apr 2026 */
+
+/* HEADER */
+#header {
+  display: flex;
+  align-items: center;
+  padding: 2px 20px;
+  gap: 2px;
+}
 
 
 #header h1 {
@@ -82,12 +101,6 @@
      padding: 0;
 }
 
-#header {
-  display: flex;
-  align-items: center;
-  padding: 2px 20px;
-  gap: 2px;
-}
 
 main {
   width: 80%;
@@ -95,7 +108,8 @@ main {
   padding: 20px;
   background: transparent;
 }
-/* Navbar */
+
+/* Search box */
  #search-box {
      display: inline-flex;
      align-items: center;
@@ -112,6 +126,7 @@ main {
      flex-direction: row;
      box-sizing: border-box;
 }
+
  #search-box input {
   border: none;
   padding: 8px 14px;
@@ -122,6 +137,8 @@ main {
   min-width: 60px;
 }
 
+/* Search function inspired by: https://www.w3schools.com/HOWTO/howto_css_searchbar.asp  Accessed: 18 Apr 2026 */
+/* Navbar links*/
 #links {
      margin: 0 auto 20px auto;
      width: fit-content;
@@ -168,14 +185,13 @@ main {
  #links a:hover {
      color: #8b6b13;
 }
+/* AI-assisted styling for navigation bar layout and animated underline effects using ChatGPT (OpenAI, GPT-5, October 2025). */
+
 /* footer */
  footer {
      text-align: center;
      padding: 15px;
      margin-top: 30px;
-     /* background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2); */
-     /* background-size: 400% 400%; */
-     /* animation: gradientShift 32s ease infinite; */
      color: rgb(0, 0, 0);
 }
 /* ABOUT US CSS */
@@ -197,6 +213,8 @@ main {
      transform: translateY(-4px);
      box-shadow: 0 8px 20px rgba(139, 107, 19, 0.15);
 }
+
+/* AI-assisted UI enhancements for hover interactivity and elevation effects using ChatGPT (OpenAI, GPT-5, October 2025). */
 /* headings */
  h2 {
      color: #8b6b13;
@@ -226,22 +244,25 @@ main {
      padding: 10px;
      border-radius: 10px;
 }
-/* table */
+/* table configuration */
  table {
   width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
   table-layout: fixed;
-  word-wrap: break-word;
+  word-wrap: break-word; 
 }
+/* Word wrap inspired by: https://www.w3schools.com/cssref/css3_pr_word-wrap.php Accessed: 18 Apr 2026 */
+
 
 th, td {
   padding: 10px;
   border: 2px solid #8b6b13;
   text-align: center;
   font-size: 0.75rem;
-  word-break: keep-all;
+  word-break: keep-all; 
 }
+/* Word break inspired by: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/word-break  Accessed: 18 Apr 2026 */
 
  th {
      background-color: #8b6b13;
