@@ -27,7 +27,7 @@ This website was designed with accessibility in mind, including:
 - Huw Cocking - Worked on the Jobs page.
 - Ned Altmann - Worked on overall refinement of all pages.
 
-## 📜 Licensing
+## 📜 Licensing 📜
 
 This project was created for **educational purposes** as part of the Web Technology coursework.
 
