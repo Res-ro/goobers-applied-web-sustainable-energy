@@ -1,4 +1,4 @@
- /* MAIN STYLES / index.html */
+ /* MAIN STYLES / predominantly used by index.html */
 /* Some parts of this section of code were generated or adapted using ChatGPT (OpenAI, version GPT-5, October 2025). 
 All AI-generated code was reviewed and modified by the author before use.*/
  
@@ -16,7 +16,6 @@ All AI-generated code was reviewed and modified by the author before use.*/
  }
 
  /* AI-assisted structure for smooth gradient animation shifts (ChatGPT GPT-5, October 2025).*/
-
  @-webkit-keyframes gradientShift {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
@@ -32,6 +31,86 @@ All AI-generated code was reviewed and modified by the author before use.*/
      background-size: 400% 400%;
      animation: gradientShift 16s ease infinite;
 }
+
+
+    #header {
+      flex-wrap: wrap;
+      padding: 10px;
+      gap: 8px;
+    }
+  
+    #header h1 {
+      line-height: normal;
+      font-size: 1.4rem;
+    }
+  
+    #logo {
+      width: 70px;
+      margin-right: 0;
+    }
+  
+    #search-box {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    #search-box input {
+      width: 100%;
+    }
+  
+    #links {
+      width: 100%;
+      border-radius: 12px;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+  
+    #links ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    main {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .contentBox {
+      padding: 15px;
+    }
+  
+    form {
+      width: 95%;
+      box-sizing: border-box;
+    }
+  
+    .job-cards {
+      width: 100%;
+      margin: 2% 0;
+      height: auto;
+    }
+  
+    table {
+      font-size: 0.7rem;
+    }
+  
+    th, td {
+      padding: 6px;
+      font-size: 0.65rem;
+    }
+  
+    .modal-content {
+      width: 95%;
+      height: 85vh;
+    }
+  
+    footer {
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+  
+  
 /* AI-assisted refinement of background transition effects for smoother user experience. (ChatGPT GPT-5, October 2025).*/
 /* MAIN LINK STYLING */
  main a {
@@ -44,13 +123,15 @@ All AI-generated code was reviewed and modified by the author before use.*/
      border-radius: 20px;
      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
+
+/* AI-assisted refinement of hover transition effects and button like shape for links (ChatGPT GPT-5, October 2025).*/
  main a:hover {
      background-color: #8b6b13;
      color: white;
      transform: translateY(-2px);
      box-shadow: 0 4px 12px rgba(139, 107, 19, 0.3);
 }
-/* AI-assisted refinement of hover transition effects and button like shape for links (ChatGPT GPT-5, October 2025).*/
+
 /* Logo */
  #logo {
      width: 100px;
@@ -59,6 +140,7 @@ All AI-generated code was reviewed and modified by the author before use.*/
      margin-right: -8px;
 }
 /* Visually hides form label*/
+/* Visually hidden function inspired by: https://a11y-guidelines.orange.com/en/articles/accessible-hiding/#:~:text=The%20conventional%20way%20is%20to,also%20for%20screen%20reader%20users. Accessed: 18 Apr 2026 */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,8 +152,6 @@ All AI-generated code was reviewed and modified by the author before use.*/
   white-space: nowrap;
   border: 0;
 }
-/* Visually hidden function inspired by: https://a11y-guidelines.orange.com/en/articles/accessible-hiding/#:~:text=The%20conventional%20way%20is%20to,also%20for%20screen%20reader%20users. Accessed: 18 Apr 2026 */
-
 
 #highlights img {
   max-width: 80%;
@@ -80,11 +160,10 @@ All AI-generated code was reviewed and modified by the author before use.*/
   display: block;
   margin: 0 auto 20px auto;
 }
-
+/* Transform function inspired by: https://www.w3schools.com/cssref/css3_pr_transform.php Accessed: 18 Apr 2026 */
  #logo:hover {
      transform: scale(1.1) rotate(-3deg);
 }
-/* Transform function inspired by: https://www.w3schools.com/cssref/css3_pr_transform.php Accessed: 18 Apr 2026 */
 
 /* HEADER */
 #header {
@@ -110,6 +189,7 @@ main {
 }
 
 /* Search box */
+/* Search function inspired by: https://www.w3schools.com/HOWTO/howto_css_searchbar.asp  Accessed: 18 Apr 2026 */
  #search-box {
      display: inline-flex;
      align-items: center;
@@ -137,7 +217,7 @@ main {
   min-width: 60px;
 }
 
-/* Search function inspired by: https://www.w3schools.com/HOWTO/howto_css_searchbar.asp  Accessed: 18 Apr 2026 */
+
 /* Navbar links*/
 #links {
      margin: 0 auto 20px auto;
@@ -186,7 +266,6 @@ main {
      color: #8b6b13;
 }
 /* AI-assisted styling for navigation bar layout and animated underline effects using ChatGPT (OpenAI, GPT-5, October 2025). */
-
 /* footer */
  footer {
      text-align: center;
@@ -244,7 +323,9 @@ main {
      padding: 10px;
      border-radius: 10px;
 }
+
 /* table configuration */
+/* Word wrap inspired by: https://www.w3schools.com/cssref/css3_pr_word-wrap.php Accessed: 18 Apr 2026 */
  table {
   width: 100%;
   border-collapse: collapse;
@@ -252,9 +333,9 @@ main {
   table-layout: fixed;
   word-wrap: break-word; 
 }
-/* Word wrap inspired by: https://www.w3schools.com/cssref/css3_pr_word-wrap.php Accessed: 18 Apr 2026 */
 
 
+/* Word break inspired by: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/word-break  Accessed: 18 Apr 2026 */
 th, td {
   padding: 10px;
   border: 2px solid #8b6b13;
@@ -262,7 +343,7 @@ th, td {
   font-size: 0.75rem;
   word-break: keep-all; 
 }
-/* Word break inspired by: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/word-break  Accessed: 18 Apr 2026 */
+
 
  th {
      background-color: #8b6b13;
@@ -485,95 +566,18 @@ th, td {
      font-weight: normal;
 }
 
-/* responsive criteria */
+/* AI-assisted responsiveness design implementation on screen sizes which are less than 768px (ChatGPT GPT-5, October 2025).*/
 @media (max-width: 768px) {
-body, main {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Verdana, Geneva, sans-serif;
-  background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
-  background-size: 400% 400%;
-  animation: gradientShift 4s ease infinite;
-  -webkit-animation: gradientShift 4s ease infinite;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
-  #header {
-    flex-wrap: wrap;
-    padding: 10px;
-    gap: 8px;
-  }
-
-  #header h1 {
-    line-height: normal;
-    font-size: 1.4rem;
-  }
-
-  #logo {
-    width: 70px;
-    margin-right: 0;
-  }
-
-  #search-box {
-    margin-left: 0;
+  body, main{
     width: 100%;
-  }
-
-  #search-box input {
-    width: 100%;
-  }
-
-  #links {
-    width: 100%;
-    border-radius: 12px;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  #links ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  main {
-    width: 95%;
-    padding: 10px;
-  }
-
-  .contentBox {
-    padding: 15px;
-  }
-
-  form {
-    width: 95%;
-    box-sizing: border-box;
-  }
-
-  .job-cards {
-    width: 100%;
-    margin: 2% 0;
-    height: auto;
-  }
-
-  table {
-    font-size: 0.7rem;
-  }
-
-  th, td {
-    padding: 6px;
-    font-size: 0.65rem;
-  }
-
-  .modal-content {
-    width: 95%;
-    height: 85vh;
-  }
-
-  footer {
-    font-size: 0.85rem;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    background: linear-gradient(135deg, #faf8f2, #f0e6cc, #dab262, #f0e6cc, #faf8f2);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease infinite;
+    -webkit-animation: gradientShift 4s ease infinite;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
